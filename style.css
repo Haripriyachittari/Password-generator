@@ -1,0 +1,144 @@
+:root{
+    --body-color:rgb(161, 248, 161);
+--con-color:#273549;
+--pass-color:white;
+--resb-color:white;
+--resp-color:black;
+--p-color:#D5D4D8;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+    background: var(--body-color);
+}
+.lighttheme{
+    
+    --body-color:#273549;
+    --con-color:white;
+    --pass-color:#10B981;
+    --resb-color:#536e92;
+    --resp-color:white;
+    --p-color:black;
+    
+}
+.container{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width:30%;
+    height:70vh;
+    margin:30px auto;
+    background-color: var(--con-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:20px;
+}
+.passwords{
+   
+    height:15vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.password1,.password2{
+    color: var(--pass-color);
+    width:200px;
+    height:40px;
+    padding:8px auto;
+    background-color: #374151;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    border:none;
+    
+
+    
+}
+#gen-pass{
+    margin-top: 40px;
+    width:180px;
+    height:42px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #10B981;
+    color:white;
+    border:none;
+    font-size:1.1rem;
+    cursor: pointer;
+
+}
+h2{
+    margin:0;
+    font-weight: bold;
+    font-size: 30px;
+    color:var(--pass-color);
+}
+h2:nth-of-type(2)
+{
+    color:#4ADF86;
+}
+p{
+    color:var(--p-color);
+
+}
+.results{
+    padding:10px 2px ;
+    margin:30px auto;
+    width:100%;
+    height:4vh;
+    background: var(--resb-color);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+.results p{
+   padding:0 4px 3px;
+
+ color:var(--resp-color);
+}
+#copy{
+    cursor: pointer;
+    background-color: transparent;
+    border:none;
+}
+#lightmode{
+    float:right;
+    border: 1px solid black;
+    background-color: transparent;
+    
+}
+.fa-moon{
+    cursor: pointer;
+    font-size: 30px;
+    position:relative;
+    top:0;
+    left: 90%;
+    color:aqua;
+    
+}
+.fa-brightness{
+    height:100%;
+    width:100%;
+    cursor: pointer;
+    font-size: 30px;
+    color:aqua;
+}
+
+@media screen and (max-width: 768px)
+{
+    .container{
+        margin:10px auto;
+        width:90%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 1200px)
+{
+    .container{
+        margin:10px auto;
+        width:90%;
+        height: 100%;
+    }
+}
+
